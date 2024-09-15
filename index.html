@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intensely</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> -->
+    <!-- AOS animatiom -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- swiper sj css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- FONT LATO -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">    
+    <!-- cdnjs font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <!-- styleCss -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <div class="container forming">
+                <form>
+                    <input type="text" placeholder="Type your search keyword here and hit Enter...">
+                    <a href="#"><i class="fa fa-search"></i></a>
+                </form>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="container hgt-btm">
+                <div class="row hd-menu">
+                    <div class="col-lg-6 col-xs-6 col-sm-6">
+                        <div class="header-contact">
+                            <ul>
+                                <li>
+                                    <div class="phone">
+                                        <i class="fa fa-phone"></i>
+                                        <p>(279) 598-9508</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="email">
+                                        <i class="fa fa-envelope"></i>
+                                        <p>jusma@nawfuk.gw</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-6 col-xs-6">
+                        <div class="header-login">
+                            <a href="#" class="login modal-form">Login / Sign Up</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div id="modal">
+        <div class="modal-content">
+            <div id="modal-top">
+                <div class="md-title">
+                    <h4><i class="fa fa-unlock-alt"></i>Login</h4>
+                    <p class="close">x</p>
+                </div>
+                
+            </div>
+            <div id="modal-main">
+                <form action="">
+                    <input type="text" placeholder="User Name" class="form-cn">
+                    <input type="text" placeholder="Password" class="form-cn">
+                </form>
+                <div class="login-box">
+                    <input type="checkbox">
+                    <span>Remember Me</span>
+                </div>
+                <button class="sign-btn btn">Sign in</button>
+            </div>
+            <div id="modal-footer">
+                <a href="#">Forgot Password?</a>
+                <span>
+                    No account?
+                    <a href="#" class="Signup-btn">Sign Up</a>
+                </span>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar" role="navigation">
+        <div class="container">
+            <div class="nav-logo">
+                <h2 class="logo">Intensely</h2>
+            </div>
+            <div class="top-menu">
+                <ul>
+                    <li class="active">
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#section_2">Feature</a>
+                    </li>
+                    <li>
+                        <a href="#section_5">Service</a>
+                    </li>
+                    <li>
+                        <a href="#section_3">Portfolio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">404 Page</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <a id="searchBtn"><i class="fa fa-search"></i></a>
+        </div>
+    </nav>
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide fist-slide">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6 inf">
+                        <h2>Creative Design & Best Feature</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since</p>
+                        <button>Read More</button>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <img src="./assets/img/person1.png" alt="">
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="swiper-slide seond-slide">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6 inf">
+                        <h2>Creative Design & Best Feature</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since</p>
+                        <button>Read More</button>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <img src="./assets/img/person2.png" alt="">
+                    </div>
+                </div>
+            </div>
+          </div>
+          
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <div id="section_2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="section-header">
+                        <h3>Features</h3>
+                        <div class="h-line"></div>
+                    </div>
+                    <div class="section-inf">
+                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humourz</p>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="section-content">
+                        <div class="row gy-5">
+                            <div class="col-lg-4 col-md-6 col-sm-12 fs-future" data-aos="zoom-in-up">
+                                <i class="fa fa-leaf feature-icon"></i>
+                                <h4>Creative design</h4>
+                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12 fs-future" data-aos="zoom-in-up">
+                                <i class="fa fa-mobile feature-icon"></i>
+                                <h4>Responsive Layouts</h4>
+                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12 fs-future" data-aos="zoom-in-up">
+                                <i class="fa fa-thumbs-o-up feature-icon"></i>
+                                <h4>Great Features</h4>
+                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12 fs-future" data-aos="zoom-in-up">
+                                <i class="fa fa-gears feature-icon"></i>
+                                <h4>Multiple Options</h4>
+                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12 fs-future" data-aos="zoom-in-up">
+                                <i class="fa fa-code feature-icon"></i>
+                                <h4>Quality Code</h4>
+                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12 fs-future" data-aos="zoom-in-up">
+                                <i class="fa fa-smile-o feature-icon"></i>
+                                <h4>Awesome Support</h4>
+                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="section_3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="section-header">
+                        <h3>About us</h3>
+                        <div class="h-line"></div>
+                    </div>
+                    <div class="section-inf">
+                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour</p>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="section-content">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <h3>Our skills</h3>
+                                <div class="s-line"></div>
+                                <div class="section-info">
+                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour</p>
+                                </div>
+                                <div class="percentage html">
+                                    <div class="per-inf">
+                                        <p>html5 100%</p>
+                                    </div>
+                                </div>
+                                <div class="percentage css">
+                                    <div class="per-inf">
+                                        <p>css3 85%</p>
+                                    </div>
+                                </div>
+                                <div class="percentage jquery">
+                                    <div class="per-inf">
+                                        <p>Jquery 70%</p>
+                                    </div>
+                                </div>
+                                <div class="percentage Wordpress">
+                                    <div class="per-inf">
+                                        <p>Wordpress 60%</p>
+                                    </div>
+                                </div>
+                                <div class="percentage php">
+                                    <div class="per-inf">
+                                        <p>php 40%</p>
+                                    </div>
+                                </div>
+                                <div class="percentage java">
+                                    <div class="per-inf">
+                                        <p>java 25%</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <h3>Why choose Us?</h3>
+                                <div class="s-line"></div>
+                                <div class="accordion" id="accordion">
+                                    <div class="accordion-item acdr">
+                                       <div class="label">Awesome Design Layout</div>
+                                       <div class="content">
+                                        <img src="./assets/img/testi1.jpg" alt="">
+                                            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+                                       </div>
+                                    </div>
+                                    <div class="accordion-item acdr">
+                                        <div class="label">Quality Coding</div>
+                                        <div class="content">
+                                            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item acdr">
+                                        <div class="label">Great Support</div>
+                                        <div class="content">
+                                            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="section_4" class="section-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 ">
+                    <div class="container">
+                        <div class="row stat">
+                            <div class="col-lg-3 col-md-3 col-sm-3 stats">
+                                <i class="fa fa-suitcase"></i>
+                                <div class="counter" data-target="1275"></div>
+                                <p>projects</p>
+                                <div class="p-line"></div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-3 stats">
+                                <i class="fa fa-clock-o"></i>
+                                <div class="counter" data-target="52755"></div>
+                                <p>House work</p>
+                                <div class="p-line"></div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-3 stats">
+                                <i class="fa fa-trophy"></i>
+                                <div class="counter" data-target="350"></div>
+                                <p>Awards</p>
+                                <div class="p-line"></div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-3 stats">
+                                <i class="fa fa-users"></i>
+                                <div class="counter" data-target="350"></div>
+                                <p>Awards</p>
+                                <div class="p-line"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="section_5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="section-header">
+                        <h3>Our Services</h3>
+                        <div class="h-line"></div>
+                    </div>
+                    <div class="section-inf">
+                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour</p>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="section-content">
+                        <div class="row gy-5">
+                            <div class="col-lg-4 col-md-6 col-sm-12 fs-future ft-future" data-aos="zoom-in-up">
+                                <i class="fa fa-desktop service-icon"></i>
+                                <div class="ft-inf">
+                                <h4>Web Development</h4>
+                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12 fs-future ft-future" data-aos="zoom-in-up">
+                                <i class="fa fa-paw service-icon"></i>
+                                <div class="ft-inf">
+                                <h4>Digital Design</h4>
+                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12 fs-future ft-future" data-aos="zoom-in-up">
+                                <i class="fa fa-magic service-icon"></i>
+                                <div class="ft-inf">
+                                    <h4>Marketing</h4>
+                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12 fs-future ft-future" data-aos="zoom-in-up">
+                                <i class="fa fa-shopping-cart service-icon"></i>
+                                <div class="ft-inf">
+                                    <h4>E-commerce</h4>
+                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12 fs-future ft-future" data-aos="zoom-in-up">
+                                <i class="fa fa-mobile service-icon"></i>
+                                <div class="ft-inf">
+                                    <h4>App Development</h4>
+                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12 fs-future ft-future" data-aos="zoom-in-up">
+                                <i class="fa fa-rocket service-icon"></i>
+                                <div class="ft-inf">
+                                    <h4>S.E.O</h4>
+                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="section_6">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="section-header">
+                        <h3>Our Pricing Tables</h3>
+                        <div class="h-line"></div>
+                    </div>
+                    <div class="section-inf">
+                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour</p>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="row cards gap-4" >
+                        <div class="col-md-3 col-lg-3 col-sm-3 card" data-aos="fade-up"
+                        data-aos-duration="1000">
+                            <div class="card-hd">
+                                <div class="hd-title">
+                                    <p>Basic</p>
+                                    <div class="price-sm">
+                                        <sup class="price-up">$</sup>
+                                25
+                                <span class="price-down">/mo</span>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="pr-inf">
+                                <ul>
+                                    <li>2GB Space</li>
+                                    <li>10GB Bandwidth</li>
+                                    <li>Free Domain</li>
+                                    <li>Free Email</li>
+                                    <li>Unlimited Support</li>
+                                </ul>
+                            </div>
+                            <div class="card-footer">
+                                <a class="purchase-btn" href="#">Purchase</a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-lg-3 col-sm-3 card" data-aos="fade-up"
+                        data-aos-duration="1700">
+                            <div class="card-hd">
+                                <div class="hd-title">
+                                    <p>Advanced</p>
+                                    <div class="price-sm">
+                                        <sup class="price-up">$</sup>
+                                50
+                                <span class="price-down">/mo</span>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="pr-inf">
+                                <ul>
+                                    <li>2GB Space</li>
+                                    <li>10GB Bandwidth</li>
+                                    <li>Free Domain</li>
+                                    <li>Free Email</li>
+                                    <li>Unlimited Support</li>
+                                </ul>
+                            </div>
+                            <div class="card-footer">
+                                <a class="purchase-btn" href="#">Purchase</a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-lg-3 col-sm-3 card" data-aos="fade-up"
+                        data-aos-duration="2300">
+                            <div class="card-hd prime">
+                                <div class="hd-title ">
+                                    <p class="prime">Professional</p>
+                                    <div class="price-sm">
+                                        <sup class="price-up">$</sup>
+                                100
+                                <span class="price-down">/mo</span>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="pr-inf">
+                                <ul>
+                                    <li>2GB Space</li>
+                                    <li>10GB Bandwidth</li>
+                                    <li>Free Domain</li>
+                                    <li>Free Email</li>
+                                    <li>Unlimited Support</li>
+                                </ul>
+                            </div>
+                            <div class="card-footer">
+                                <a class="purchase-btn prime" href="#">Purchase</a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-lg-3 col-sm-3 card" data-aos="fade-up"
+                        data-aos-duration="3000">
+                            <div class="card-hd">
+                                <div class="hd-title">
+                                    <p>Exclusive</p>
+                                    <div class="price-sm">
+                                        <sup class="price-up">$</sup>
+                                125
+                                <span class="price-down">/mo</span>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="pr-inf">
+                                <ul>
+                                    <li>2GB Space</li>
+                                    <li>10GB Bandwidth</li>
+                                    <li>Free Domain</li>
+                                    <li>Free Email</li>
+                                    <li>Unlimited Support</li>
+                                </ul>
+                            </div>
+                            <div class="card-footer">
+                                <a class="purchase-btn" href="#">Purchase</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+    </div>  
+    <div id="section_7">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="section-header">
+                        <h3>Our team</h3>
+                        <div class="h-line"></div>
+                    </div>
+                    <div class="section-inf">
+                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour</p>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="container">
+                        <div class="row cards gap-4">
+                            <div class="col-lg-3 col-md-3 col-sm-3 card">
+                                <div class="card-top">
+                                    <img src="./assets/img/team-member-2.png" alt="">
+                                </div>
+                                <div class="card-article">
+                                    <h3>John deo</h3>
+                                    <h4>Ceo</h4>
+                                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                                </div>
+                                <div class="card-ft">
+                                    
+                                        <i class="fa-brands fa-facebook"></i>
+                                    <i class="fa-brands fa-twitter"></i>
+                                    <i class="fa-brands fa-linkedin"></i>
+                                    
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-3 card">
+                                <div class="card-top">
+                                    <img src="./assets/img/team-member-1.png" alt="">
+                                </div>
+                                <div class="card-article">
+                                    <h3>Bernice Neumann</h3>
+                                    <h4>Designer</h4>
+                                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                                </div>
+                                <div class="card-ft">
+                                    
+                                        <i class="fa-brands fa-facebook"></i>
+                                    <i class="fa-brands fa-twitter"></i>
+                                    <i class="fa-brands fa-linkedin"></i>
+                                    
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-3 card">
+                                <div class="card-top">
+                                    <img src="./assets/img/team-member-3.png" alt="">
+                                </div>
+                                <div class="card-article">
+                                    <h3>Dvid Cameron</h3>
+                                    <h4>Developer</h4>
+                                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                                </div>
+                                <div class="card-ft">
+                                    
+                                        <i class="fa-brands fa-facebook"></i>
+                                    <i class="fa-brands fa-twitter"></i>
+                                    <i class="fa-brands fa-linkedin"></i>
+                                    
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-3 card">
+                                <div class="card-top">
+                                    <img src="./assets/img/team-member-1.png" alt="">
+                                </div>
+                                <div class="card-article">
+                                    <h3>Bernice Neumann</h3>
+                                    <h4>Designer</h4>
+                                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                                </div>
+                                <div class="card-ft">
+                                    
+                                    <i class="fa-brands fa-facebook"></i>
+                                    <i class="fa-brands fa-twitter"></i>
+                                    <i class="fa-brands fa-linkedin"></i>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div> 
+    </div>
+    <div class="section-4 clsbck">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 ">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <img src="./assets/img/testi1.jpg" alt="">
+                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+                            <h6>Bernice Neumann, <span>Designer</span></h6>
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="./assets/img/testi2.jpg" alt="">
+                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+                            <h6>Bernice Neumann, <span>Designer</span></h6>
+                        </div>
+                          <div class="swiper-slide">
+                            <img src="./assets/img/testi2.jpg" alt="">
+                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+                            <h6>Bernice Neumann, <span>Designer</span></h6>
+                        </div>
+                         
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="section_8">
+        <div class="brands">
+            <div class="discovery brand">
+                <img src="./assets/img/discovery.png" alt="">
+            </div>
+            <div class="amazon brand">
+                <img src="./assets/img/amazon.png" alt="">
+            </div>
+            <div class="envato brand">
+                <img src="./assets/img/envato.png" alt="">
+            </div>
+            <div class="tuenti brand">
+                <img src="./assets/img/tuenti.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div id="section_9">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="section-header">
+                        <h3>Our team</h3>
+                        <div class="h-line"></div>
+                    </div>
+                    <div class="section-inf">
+                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour</p>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="container">
+                        <div class="row cards">
+                            <div class="col-lg-4 col-md-4 col-sm-4 card">
+                                <img src="./assets/img/blog-img-1.jpg" alt="">
+                                <div class="card-inff">
+                                    <h4>All about writing story</h4>
+                                <p>By John Powell |18 October 2015</p>
+                                <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the</p>
+                                <a href="#">Read More</a>  
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-4 card">
+                                <img src="./assets/img/blog-img-2.jpg" alt="">
+                                <div class="card-inff">
+                                    <h4>All about writing story</h4>
+                                <p>By John Powell |18 October 2015</p>
+                                <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the</p>
+                                <a href="#">Read More</a>  
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-4 card cardt">
+                                <img src="./assets/img/blog-img-3.jpg" alt="">
+                                <div class="card-inff">
+                                    <h4>All about writing story</h4>
+                                <p>By John Powell |18 October 2015</p>
+                                <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the</p>
+                                <a href="#">Read More</a>  
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>     
+    </div>
+    <div class="section-4 clsbdk">
+        <div class="container">
+            <div class="row sdsfs">
+                <div class="col-lg-12 col-md-12 col-sm-12 intror">
+                    <div class="section-intro" data-aos="fade-up"
+                    data-aos-duration="1800">
+                        <h3>subscribe now</h3>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 forming">
+                    <form action="" data-aos="fade-up"
+                    data-aos-duration="2300">
+                        <input type="email" placeholder="Enter Your E-mail">
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="last">
+        <h4>Designed by </h4>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!--  jquery -->
+    <script src="jquery-3.7.1.js"></script>
+    <!--  bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!--  swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+     <!-- main js -->
+    <script src="./main.js"></script>
+</body>
+</html>
